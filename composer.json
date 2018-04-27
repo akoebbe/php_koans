@@ -1,0 +1,15 @@
+{
+    "name": "abk/php-koans",
+    "description": "Learn PHP through Koans using PHPUnit",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Koebbe",
+            "email": "andrew@koebbe.com"
+        }
+    ]
+}
