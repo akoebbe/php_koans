@@ -4,7 +4,9 @@
     colors="true"
     processIsolation="false"
     stopOnError="true"
-    stopOnFailure="true">
+    printerClass="KoansLib\KoanPrinter"
+    stopOnFailure="true"
+>
 
     <testsuites>
         <testsuite name="PHP Koans">
