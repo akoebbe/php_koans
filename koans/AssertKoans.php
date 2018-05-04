@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-const __ = null;
+defined('__') or define('__', null);
 
 class AssertKoans extends TestCase
 {
@@ -12,7 +12,7 @@ class AssertKoans extends TestCase
     public function testAssertTruth()
     {
         // Change FALSE to TRUE
-        $this->assertTrue(FALSE);
+        $this->assertTrue(TRUE);
     }
 
     /**
@@ -21,7 +21,7 @@ class AssertKoans extends TestCase
     public function testAssertWithMessage()
     {
         // Change FALSE to TRUE
-        $this->assertTrue(FALSE, "This should be True, please fix this");
+        $this->assertTrue(TRUE, "This should be True, please fix this");
     }
 
     /**
@@ -30,7 +30,7 @@ class AssertKoans extends TestCase
     public function testFillInValues()
     {
         // Replace __ with your answer
-        $this->assertEquals(__, 1+1);
+        $this->assertEquals(2, 1+1);
     }
 
     /**
@@ -38,7 +38,7 @@ class AssertKoans extends TestCase
      */
     public function testAssertEquality()
     {
-        $expected_value = __; // Replace __ with your answer
+        $expected_value = 2; // Replace __ with your answer
         $actual_value = 1 + 1;
         
         $this->assertTrue($expected_value == $actual_value);
@@ -49,7 +49,7 @@ class AssertKoans extends TestCase
      */
     public function testABetterWayToAssertEquality()
     {
-        $expected_value = __; // Replace __ with your answer
+        $expected_value = 2; // Replace __ with your answer
         $actual_value = 1 + 1;
 
         $this->assertEquals($expected_value, $actual_value);
@@ -58,7 +58,7 @@ class AssertKoans extends TestCase
 
     public function testThatSometimesWeNeedToKnowTheVariableType()
     {
-        $this->assertEquals(__, gettype("What am I"));
+        $this->assertEquals("string", gettype("What am I"));
     }
 
     public function testThatSometimesWeNeedToKnowTheClassType()
@@ -66,7 +66,7 @@ class AssertKoans extends TestCase
         // See bottom of this file for class definition
         $object = new Enlightenment();
 
-        $this->assertEquals(__, get_class($object));
+        $this->assertEquals("Enlightenment", get_class($object));
     }
 }
 

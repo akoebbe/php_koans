@@ -9,8 +9,10 @@
 >
 
     <testsuites>
-        <testsuite name="PHP Koans">
+        <testsuite name="PHPKoans">
             <directory suffix="Koans.php">koans/</directory>
+            <file>.koans/AssertKoans.php</file>
+            <file>.koans/StringKoans.php</file>
         </testsuite>
     </testsuites>
 
