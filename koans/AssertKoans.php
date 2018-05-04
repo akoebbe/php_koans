@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-const __ = null;
+defined('__') or define('__', null);
 
 class AssertKoans extends TestCase
 {
