@@ -1,5 +1,5 @@
 {
-    "name": "abk/php-koans",
+    "name": "akoebbe/php_koans",
     "description": "Learn PHP through Koans using PHPUnit",
     "type": "project",
     "require-dev": {

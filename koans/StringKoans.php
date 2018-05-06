@@ -75,6 +75,17 @@ OMPHALOSKEPSIS;
         $this->assertEquals(__, strlen($string));
     }
 
+    public function testStringsCanBeWrappedInANowdocSyntax()
+    {
+        // Note the single quotes around EOT, this is the Nowdoc syntax
+        $string = <<<'EOT'
+Howdy,
+world!
+EOT;
+        // Hint: First and last line breaks of a Heredoc don't count
+        $this->assertEquals(__, strlen($string));
+    }
+
     public function testDotConcatenatesStrings()
     {
         $string = "Hello, " . "World";
