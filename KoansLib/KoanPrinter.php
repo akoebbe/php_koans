@@ -1,8 +1,6 @@
 <?php
 namespace KoansLib;
 
-use PHPUnit\Framework\AssertionFailedError;
-use PHPUnit\Framework\Test;
 use PHPUnit\Framework\TestResult;
 use PHPUnit\TextUI\ResultPrinter;
 
@@ -15,15 +13,6 @@ use PHPUnit\TextUI\ResultPrinter;
  */
 class KoanPrinter extends ResultPrinter
 {
-
-    /**
-     * A failure occurred.
-     */
-    public function addFailure(Test $test, AssertionFailedError $e, float $time): void
-    {
-        $this->writeProgress('⛰');
-        $this->lastTestFailed = true;
-    }
 
     protected function printHeader(): void
     {

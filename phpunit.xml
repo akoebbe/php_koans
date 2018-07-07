@@ -11,8 +11,9 @@
     <testsuites>
         <testsuite name="PHPKoans">
             <directory suffix="Koans.php">koans/</directory>
-            <file>.koans/AssertKoans.php</file>
-            <file>.koans/StringKoans.php</file>
+            <file>AssertKoans.php</file>
+            <file>StringKoans.php</file>
+            <file>StringManipulationKoans.php</file>
         </testsuite>
     </testsuites>
 
