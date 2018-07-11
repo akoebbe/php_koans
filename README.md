@@ -30,7 +30,7 @@ https://github.com/akoebbe/php_koans
 
 or
 
-[Download a zipped copy] (https://github.com/akoebbe/php_koans/archive/master.zip)
+[Download a zipped copy](https://github.com/akoebbe/php_koans/archive/master.zip)
 
 ## Installing PHP Koans
 
