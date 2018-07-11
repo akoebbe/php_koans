@@ -61,7 +61,8 @@ If you see version 7.1 or higher, you're good to go! If not, then you will want 
 2. Copy the command listed in the Install section and paste it into the Terminal app
 3. Follow the install instructions
 4. Run `brew install php` to install the latest version
-5. Run `php --version`, you should now see the latest version of PHP reported
+5. Open a new terminal window or run `source ~/.bash_profile`
+6. Run `php --version`, you should now see the latest version of PHP reported
 
 ### Linux
 
