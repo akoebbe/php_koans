@@ -114,3 +114,46 @@ This koans project uses Sebastian Bergmann's wonderful [PHPUnit](https://phpunit
 ## Work in Progress
 
 This project and document are a work in progress. There is still much to do and many people to thank. Please bear with me (and contribute!) as the project progresses.
+
+These are the list of koans from Python Koans to be ported over to PHP Koans.
+
+- ~~AboutAsserts~~
+- ~~AboutStrings~~
+- AboutNone
+- AboutLists
+- AboutListAssignments
+- AboutDictionaries
+- ~~AboutStringManipulation~~
+- AboutTuples
+- AboutMethods
+- AboutControlStatements
+- AboutTrueAndFalse
+- AboutSets
+- AboutTriangleProject
+- AboutExceptions
+- AboutTriangleProject2
+- AboutIteration
+- AboutComprehension
+- AboutGenerators
+- AboutLambdas
+- AboutScoringProject
+- AboutClasses
+- AboutNewStyleClasses
+- AboutWithStatements
+- AboutMonkeyPatching
+- AboutDiceProject
+- AboutMethodBindings
+- AboutDecoratingWithFunctions
+- AboutDecoratingWithClasses
+- AboutInheritance
+- AboutMultipleInheritance
+- AboutScope
+- AboutModules
+- AboutPackages
+- AboutClassAttributes
+- AboutAttributeAccess
+- AboutDeletingObjects
+- AboutProxyObjectProject
+- TelevisionTest
+- AboutExtraCredit
+- AboutRegex
