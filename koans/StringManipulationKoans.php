@@ -42,7 +42,7 @@ class StringManipulationKoans extends TestCase
     /**
      * @testdox Heredoc interpolates like a double-quoted string
      */
-    public function testHeredocInterpolatesLikeDoubleQuotedStrings()
+    public function testHeredocInterpolatesLikeADoubleQuotedString()
     {
         $value = "one";
         $string = <<<EOT
@@ -55,7 +55,7 @@ EOT;
     /**
      * @testdox Nowdoc interpolates like a single-quoted string
      */
-    public function testNowdocInterpolatesLikeSingleQuotedStrings()
+    public function testNowdocInterpolatesLikeASingleQuotedString()
     {
         $value = "one";
         $string = <<<'EOT'
