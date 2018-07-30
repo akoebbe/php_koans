@@ -15,7 +15,7 @@ class StringManipulationKoans extends TestCase
         $this->assertEquals(__, $string);
     }
 
-    public function testStringInterpolationWontWorkInSingleQuotedString()
+    public function testStringInterpolationWillNotWorkInSingleQuotedString()
     {
         $value = "one";
         $string = 'The value is $value';
