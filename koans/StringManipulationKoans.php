@@ -39,6 +39,9 @@ class StringManipulationKoans extends TestCase
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Heredoc interpolates like a double-quoted string
+     */
     public function testHeredocInterpolatesLikeDoubleQuotedStrings()
     {
         $value = "one";
@@ -49,6 +52,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Nowdoc interpolates like a single-quoted string
+     */
     public function testNowdocInterpolatesLikeSingleQuotedStrings()
     {
         $value = "one";
