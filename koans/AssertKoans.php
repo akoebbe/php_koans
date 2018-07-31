@@ -12,7 +12,7 @@ class AssertKoans extends TestCase
      */
     public function testAssertTruth()
     {
-        // Change FALSE to TRUE
+        // Change "false" to "true"
         $this->assertTrue(false);
     }
 
@@ -21,7 +21,7 @@ class AssertKoans extends TestCase
      */
     public function testAssertWithMessage()
     {
-        // Change FALSE to TRUE
+        // Change "false" to "true"
         $this->assertTrue(false, "This should be True, please fix this");
     }
 
