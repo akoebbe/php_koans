@@ -2,7 +2,7 @@
 namespace KoansLib;
 
 use PHPUnit\Framework\TestResult;
-use PHPUnit\TextUI\ResultPrinter;
+use PHPUnit\Util\TestDox\CliTestDoxPrinter;
 
 /**
  * Class KoanPrinter
@@ -11,8 +11,14 @@ use PHPUnit\TextUI\ResultPrinter;
  *
  * @package KoansLib
  */
-class KoanPrinter extends ResultPrinter
+class KoanPrinter extends CliTestDoxPrinter
 {
+    public function printResult(TestResult $result): void
+    {
+        $this->printHeader();
+
+        $this->printFooter($result);
+    }
 
     protected function printHeader(): void
     {
