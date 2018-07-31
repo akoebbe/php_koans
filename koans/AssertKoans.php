@@ -13,7 +13,7 @@ class AssertKoans extends TestCase
     public function testAssertTruth()
     {
         // Change FALSE to TRUE
-        $this->assertTrue(FALSE);
+        $this->assertTrue(false);
     }
 
     /**
@@ -22,7 +22,7 @@ class AssertKoans extends TestCase
     public function testAssertWithMessage()
     {
         // Change FALSE to TRUE
-        $this->assertTrue(FALSE, "This should be True, please fix this");
+        $this->assertTrue(false, "This should be True, please fix this");
     }
 
     /**
@@ -54,7 +54,6 @@ class AssertKoans extends TestCase
         $actual_value = 1 + 1;
 
         $this->assertEquals($expected_value, $actual_value);
-        
     }
 
     public function testThatSometimesWeNeedToKnowTheVariableType()
