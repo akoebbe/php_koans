@@ -1,4 +1,5 @@
 <?php
+namespace PhpKoans;
 
 use PHPUnit\Framework\TestCase;
 
