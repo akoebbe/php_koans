@@ -71,7 +71,14 @@ class AssertKoans extends TestCase
     }
 }
 
+// phpcs:disable
 /**
  * Empty class for testThatSometimesWeNeedToKnowTheClassType()
  */
-class Enlightenment {};
+class Enlightenment {
+    /**
+     * Important: This class is within the PhpKoans namespace.
+     * That means that the FQCN ("fully qualified class name") starts with "PhpKoans\"
+     */
+};
+// phpcs:enable
