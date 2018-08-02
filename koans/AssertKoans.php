@@ -1,4 +1,5 @@
 <?php
+namespace PhpKoans;
 
 use PHPUnit\Framework\TestCase;
 
@@ -11,8 +12,8 @@ class AssertKoans extends TestCase
      */
     public function testAssertTruth()
     {
-        // Change FALSE to TRUE
-        $this->assertTrue(FALSE);
+        // Change "false" to "true"
+        $this->assertTrue(false);
     }
 
     /**
@@ -20,8 +21,8 @@ class AssertKoans extends TestCase
      */
     public function testAssertWithMessage()
     {
-        // Change FALSE to TRUE
-        $this->assertTrue(FALSE, "This should be True, please fix this");
+        // Change "false" to "true"
+        $this->assertTrue(false, "This should be True, please fix this");
     }
 
     /**
@@ -53,7 +54,6 @@ class AssertKoans extends TestCase
         $actual_value = 1 + 1;
 
         $this->assertEquals($expected_value, $actual_value);
-        
     }
 
     public function testThatSometimesWeNeedToKnowTheVariableType()
@@ -70,7 +70,14 @@ class AssertKoans extends TestCase
     }
 }
 
+// phpcs:disable
 /**
  * Empty class for testThatSometimesWeNeedToKnowTheClassType()
  */
-class Enlightenment {};
+class Enlightenment {
+    /**
+     * Important: This class is within the PhpKoans namespace.
+     * That means that the FQCN ("fully qualified class name") starts with "PhpKoans\"
+     */
+};
+// phpcs:enable

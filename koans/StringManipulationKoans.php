@@ -1,4 +1,5 @@
 <?php
+namespace PhpKoans;
 
 use PHPUnit\Framework\TestCase;
 
@@ -11,7 +12,7 @@ class StringManipulationKoans extends TestCase
         $value = "one";
         $string = "The value is $value";
 
-        $this->assertEquals(__,  $string);
+        $this->assertEquals(__, $string);
     }
 
     public function testStringInterpolationWontWorkInSingleQuotedString()
@@ -19,7 +20,7 @@ class StringManipulationKoans extends TestCase
         $value = "one";
         $string = 'The value is $value';
 
-        $this->assertEquals(__,  $string);
+        $this->assertEquals(__, $string);
     }
 
     public function testStringInterpolationWithCurlyBrackets()
