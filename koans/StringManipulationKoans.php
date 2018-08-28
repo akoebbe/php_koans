@@ -7,6 +7,9 @@ defined('__') or define('__', null);
 
 class StringManipulationKoans extends TestCase
 {
+    /**
+     * @testdox One can interpolate variables in a double-quoted string.
+     */
     public function testStringInterpolationInDoubleQuotedString()
     {
         $value = "one";
@@ -15,6 +18,9 @@ class StringManipulationKoans extends TestCase
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox One cannot interpolate variables in a single-quoted string.
+     */
     public function testStringInterpolationWillNotWorkInSingleQuotedString()
     {
         $value = "one";
@@ -23,6 +29,9 @@ class StringManipulationKoans extends TestCase
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Another option for variable iterpolation in a double-quoted string is with curly brackets.
+     */
     public function testStringInterpolationWithCurlyBrackets()
     {
         $value = "one";
@@ -31,6 +40,9 @@ class StringManipulationKoans extends TestCase
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox If one wants to interpolate associative array elements, one must use curly brackets.
+     */
     public function testInterpolatingAssociativeArrayElementsMustBeInCurlyBrackets()
     {
         $values = ["test" => "one", "foo" => "two"];
@@ -40,7 +52,7 @@ class StringManipulationKoans extends TestCase
     }
 
     /**
-     * @testdox Heredoc interpolates like a double-quoted string
+     * @testdox Heredoc interpolates like a double-quoted string.
      */
     public function testHeredocInterpolatesLikeADoubleQuotedString()
     {
@@ -53,7 +65,7 @@ EOT;
     }
 
     /**
-     * @testdox Nowdoc interpolates like a single-quoted string
+     * @testdox Nowdoc interpolates like a single-quoted string.
      */
     public function testNowdocInterpolatesLikeASingleQuotedString()
     {
@@ -65,6 +77,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox One can format a string using sprintf.
+     */
     public function testStringFormattingWithSprintf()
     {
         $product = "banana";
@@ -74,6 +89,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox When formatting a string with sprintf, use different type specifiers for the different types of variables.
+     */
     public function testStringFormattingWithSprintfTypeSpecifiers()
     {
         $product = "bananas";
@@ -86,6 +104,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Complex string formatting can be done with sprintf.
+     */
     public function testComplexStringFormattingWithSprintf()
     {
         $product = "bananas";
@@ -103,6 +124,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox One can extract a substring from another string.
+     */
     public function testExtractAStringFromAString()
     {
         $string = "Bacon, lettuce and tomato";
@@ -110,6 +134,9 @@ EOT;
         $this->assertEquals(__, substr($string, 7, 10));
     }
 
+    /**
+     * @testdox One can get a single character from a string using an array index.
+     */
     public function testYouCanGetASingleCharacterFromAString()
     {
         $string = "Bacon, lettuce and tomato";
@@ -117,6 +144,9 @@ EOT;
         $this->assertEquals(__, $string[1]);
     }
 
+    /**
+     * @testdox Strings can be split.
+     */
     public function testStringsCanBeSplit()
     {
         $string = "Sausage Egg Cheese";
@@ -125,6 +155,9 @@ EOT;
         $this->assertEquals([__, __, __], $words);
     }
 
+    /**
+     * @testdox Strings can be joined.
+     */
     public function testStringsCanBeJoined()
     {
         $words = ["Now", "is", "the", "time"];
@@ -133,6 +166,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox One can change the case of strings.
+     */
     public function testChangeCaseOfStrings()
     {
         $this->assertEquals(__, ucwords('one hand clap'));

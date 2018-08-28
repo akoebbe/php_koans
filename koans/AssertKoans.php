@@ -56,11 +56,17 @@ class AssertKoans extends TestCase
         $this->assertEquals($expected_value, $actual_value);
     }
 
+    /**
+     * @testdox Sometimes we need to know the variable type.
+     */
     public function testSometimesWeNeedToKnowTheVariableType()
     {
         $this->assertEquals(__, gettype("What am I"));
     }
 
+    /**
+     * @testdox Sometimes we need to know the class type.
+     */
     public function testSometimesWeNeedToKnowTheClassType()
     {
         // See bottom of this file for class definition
