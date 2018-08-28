@@ -53,7 +53,7 @@ It was the worst of times.";
         $this->assertEquals(__, strlen($string));
     }
 
-    public function testStringsCanBeWrappedInAHeardocSyntax()
+    public function testStringsCanBeWrappedInAHeredocSyntax()
     {
         $string = <<<EOT
 Howdy,
