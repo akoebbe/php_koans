@@ -8,7 +8,7 @@ defined('__') or define('__', null);
 class AssertKoans extends TestCase
 {
     /**
-     * We shall contemplate truth by testing reality, via asserts.
+     * @testdox We shall contemplate truth by testing reality, via asserts.
      */
     public function testAssertTruth()
     {
@@ -17,7 +17,7 @@ class AssertKoans extends TestCase
     }
 
     /**
-     * Enlightenment may be more easily achieved with appropriate messages.
+     * @testdox Enlightenment may be more easily achieved with appropriate messages.
      */
     public function testAssertWithMessage()
     {
@@ -26,7 +26,7 @@ class AssertKoans extends TestCase
     }
 
     /**
-     * Sometimes we will ask you to fill in the values
+     * @testdox Sometimes we will ask you to fill in the values.
      */
     public function testFillInValues()
     {
@@ -35,18 +35,18 @@ class AssertKoans extends TestCase
     }
 
     /**
-     * To understand reality, we must compare our expectations against reality.
+     * @testdox To understand reality, we must compare our expectations against reality.
      */
     public function testAssertEquality()
     {
         $expected_value = __; // Replace __ with your answer
         $actual_value = 1 + 1;
-        
+
         $this->assertTrue($expected_value == $actual_value);
     }
 
     /**
-     * Some ways of asserting equality are better than others.
+     * @testdox Some ways of asserting equality are better than others.
      */
     public function testABetterWayToAssertEquality()
     {
@@ -56,12 +56,18 @@ class AssertKoans extends TestCase
         $this->assertEquals($expected_value, $actual_value);
     }
 
-    public function testThatSometimesWeNeedToKnowTheVariableType()
+    /**
+     * @testdox Sometimes we need to know the variable type.
+     */
+    public function testSometimesWeNeedToKnowTheVariableType()
     {
         $this->assertEquals(__, gettype("What am I"));
     }
 
-    public function testThatSometimesWeNeedToKnowTheClassType()
+    /**
+     * @testdox Sometimes we need to know the class type.
+     */
+    public function testSometimesWeNeedToKnowTheClassType()
     {
         // See bottom of this file for class definition
         $object = new Enlightenment();

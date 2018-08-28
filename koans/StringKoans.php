@@ -7,6 +7,9 @@ defined('__') or define('__', null);
 
 class StringKoans extends TestCase
 {
+    /**
+     * @testdox Double-quoted strings are strings.
+     */
     public function testDoubleQuotedStringsAreStrings()
     {
         $string = "Hello, world.";
@@ -15,6 +18,9 @@ class StringKoans extends TestCase
         $this->assertEquals(__, is_string($string));
     }
 
+    /**
+     * @testdox Single-quoted strings are also strings.
+     */
     public function testSingleQuotedStringsAreAlsoStrings()
     {
         $string = 'Goodbye, world.';
@@ -22,6 +28,9 @@ class StringKoans extends TestCase
         $this->assertEquals(__, is_string($string));
     }
 
+    /**
+     * @testdox Use the backslash for escaping quotes in strings.
+     */
     public function testUseBackslashForEscapingQuotesInStrings()
     {
         $a = "He said, \"Don't\"";
@@ -29,7 +38,10 @@ class StringKoans extends TestCase
 
         $this->assertEquals(__, ($a == $b));
     }
-    
+
+    /**
+     * @testdox Use single-quotes to create a string that contains double-quotes.
+     */
     public function testUseSingleQuotesToCreateAStringWithDoubleQuotes()
     {
         $string = 'He said, "Go Away."';
@@ -37,6 +49,9 @@ class StringKoans extends TestCase
         $this->assertEquals(__, $string); // Replace __ with a double quoted escaped version of the string
     }
 
+    /**
+     * @testdox Use double-quotes to create a string that contains single-quotes.
+     */
     public function testUseDoubleQuotesToCreateAStringWithSingleQuotes()
     {
         $string = "Don't";
@@ -44,6 +59,9 @@ class StringKoans extends TestCase
         $this->assertEquals(__, $string); // Replace __ with a single quoted escaped version of the string
     }
 
+    /**
+     * @testdox Strings can continue onto multiple lines.
+     */
     public function testStringsCanContinueOntoMultipleLines()
     {
         $string = "It was the best of times,
@@ -53,7 +71,10 @@ It was the worst of times.";
         $this->assertEquals(__, strlen($string));
     }
 
-    public function testStringsCanBeWrappedInAHeardocSyntax()
+    /**
+     * @testdox Strings can be wrapped in a heredoc syntax.
+     */
+    public function testStringsCanBeWrappedInAHeredocSyntax()
     {
         $string = <<<EOT
 Howdy,
@@ -64,6 +85,8 @@ EOT;
     }
 
     /**
+     * @testdox A heredoc identifier can be arbitrary.
+     *
      * Reference: https://secure.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc
      */
     public function testHeredocIdentifierIsArbitrary()
@@ -76,6 +99,9 @@ OMPHALOSKEPSIS;
         $this->assertEquals(__, strlen($string));
     }
 
+    /**
+     * @testdox Strings can be wrapped in a nowdoc syntax.
+     */
     public function testStringsCanBeWrappedInANowdocSyntax()
     {
         // Note the single quotes around EOT, this is the Nowdoc syntax
@@ -87,6 +113,9 @@ EOT;
         $this->assertEquals(__, strlen($string));
     }
 
+    /**
+     * @testdox A dot concatenates strings.
+     */
     public function testDotConcatenatesStrings()
     {
         $string = "Hello, " . "World";
@@ -94,6 +123,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Dot-concatenation works with variables.
+     */
     public function testDotWorksWithVariables()
     {
         $hi = "Hello, ";
@@ -103,6 +135,9 @@ EOT;
         $this->assertEquals(__, $string);
     }
 
+    /**
+     * @testdox Dot-concatenation will not modify the original strings.
+     */
     public function testDotWillNotModifyOriginalStrings()
     {
         $hi = "Hello, ";
@@ -113,6 +148,9 @@ EOT;
         $this->assertEquals(__, $there);
     }
 
+    /**
+     * @testdox Dot-equals will append to the end of a string.
+     */
     public function testDotEqualsAppendsToEndOfString()
     {
         $hi = "Hello, ";
