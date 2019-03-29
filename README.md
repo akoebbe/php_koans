@@ -87,6 +87,22 @@ If that version is outdated, you can use Remi's Repository to install a newer ve
 sudo pacman -S php
 ```
 
+### Dockerization
+
+If you prefer not to install php in your system, you can use a docker container.
+
+To build the image run a terminal, go to the php_koans folder and run:
+
+```
+docker build . -t 'php-koans'
+```
+
+Every time you want to execute the suite run:
+
+```
+docker run -ti php-koans
+```
+
 ## Getting Started
 
 From a *nix terminal or windows command prompt go to the php_koans folder and run:
