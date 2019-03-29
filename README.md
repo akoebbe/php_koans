@@ -91,7 +91,7 @@ sudo pacman -S php
 
 If you prefer not to install php in your system, you can use a docker container.
 
-to build the image run a terminal, go to the php_koans folder and run:
+To build the image run a terminal, go to the php_koans folder and run:
 
 ```
 docker build . -t 'php-koans'
