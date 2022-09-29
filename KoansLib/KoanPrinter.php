@@ -20,7 +20,7 @@ class KoanPrinter extends CliTestDoxPrinter
         $this->printFooter($result);
     }
 
-    protected function printHeader(): void
+    protected function printHeader(TestResult $result): void
     {
         $this->write("\n\n");
     }

@@ -1,6 +1,6 @@
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/7.0/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.1/phpunit.xsd"
     colors="true"
     processIsolation="false"
     stopOnError="true"
@@ -11,9 +11,9 @@
     <testsuites>
         <testsuite name="PHPKoans">
             <directory suffix="Koans.php">koans/</directory>
-            <file>AssertKoans.php</file>
-            <file>StringKoans.php</file>
-            <file>StringManipulationKoans.php</file>
+            <file>koans/AssertKoans.php</file>
+            <file>koans/StringKoans.php</file>
+            <file>koans/StringManipulationKoans.php</file>
         </testsuite>
     </testsuites>
 
