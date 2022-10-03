@@ -36,7 +36,7 @@ or
 
 Aside from downloading or checking out the latest version of PHP Koans, you need to install the PHP interpreter.
 
-PHP Koans was written using PHP 7.1. It is recommended that you use PHP 7.1+, though it may work in earlier versions, don't hold your breath.
+PHP Koans was written using PHP 8.1. It is recommended that you use PHP 8.1+, though it may work in earlier versions, don't hold your breath.
 
 Only the command line interface (CLI) for PHP is needed as we will not be testing web development.
 
@@ -53,7 +53,7 @@ macOS bundles PHP, so you may not need to do anything depending on the version i
 php --version
 ```
 
-If you see version 7.1 or higher, you're good to go! If not, then you will want to install a newer version with [Homebrew](https://brew.sh/).
+If you see version 8.1 or higher, you're good to go! If not, then you will want to install a newer version with [Homebrew](https://brew.sh/).
 
 #### Homebrew
 
