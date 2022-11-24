@@ -9,59 +9,58 @@ class EmptyIsNullOrIssetKoan extends TestCase
     /**
      * @test
      */
-    function testWorkingWithIsNull()
+    function testMethodIsNull()
     {
-        //is_null return true if variable is null
-        $this->assertEquals(true, is_null(NULL));
-        $this->assertEquals(false, is_null(""));
+        //is_null return __ if variable is null
+        $this->assertEquals(__, is_null(NULL));
+        $this->assertEquals(__, is_null(""));
     }
 
     /**
      * @test
      */
-    function testWorkingWithIsset()
+    function testMethodIsset()
     {
-        //isset return true if variable exist and it is not null
-        $this->assertEquals(false, isset($something));
+        //isset return __ if variable exist and it is not null
+        $this->assertEquals(__, isset($something));
 
         $array = array('bar' => 1, 'foo' => null);
-        $this->assertEquals(true, isset($array));
-        $this->assertEquals(true , isset($array['bar']));
-        $this->assertEquals(false , isset($array['foo']));
-        $this->assertEquals(false , isset($array['barfoo']));
+        $this->assertEquals(__, isset($array));
+        $this->assertEquals(__ , isset($array['bar']));
+        $this->assertEquals(__ , isset($array['foo']));
+        $this->assertEquals(__ , isset($array['barfoo']));
 
     }
 
     /**
      * @test
      */
-    function testWorkingWithEmpty()
+    function testMethodEmpty()
     {
         //Working with numbers
-        $this->assertEquals(true, empty(0));
-        $this->assertEquals(false, empty(1));
+        $this->assertEquals(__, empty(0));
+        $this->assertEquals(__, empty(1));
 
         //Working with decimals
-        $this->assertEquals(true, empty(0.0));
-        $this->assertEquals(false, empty(0.1));
+        $this->assertEquals(__, empty(0.0));
+        $this->assertEquals(__, empty(0.1));
 
         //Working wiht strings
-        $this->assertEquals(true, empty(""));
-        $this->assertEquals(false, empty(" "));
+        $this->assertEquals(__, empty(""));
+        $this->assertEquals(__, empty(" "));
 
         //Working with booleans
-        $this->assertEquals(true, empty(false));
-        $this->assertEquals(false, empty(true));
+        $this->assertEquals(__, empty(false));
+        $this->assertEquals(__, empty(true));
 
         //working with arrays
-        $this->assertEquals(true, empty(array()));
-        $this->assertEquals(false, empty(array(1)));
+        $this->assertEquals(__, empty(array()));
+        $this->assertEquals(__, empty(array(1)));
 
         //working with objects
-        $this->assertEquals(false, empty((object)array()));
-        $this->assertEquals(true, empty(null));
-        $this->assertEquals(true, empty($something));
+        $this->assertEquals(__, empty((object)array()));
+        $this->assertEquals(__, empty(null));
+        $this->assertEquals(__, empty($something));
     }
 }
-
 ?>
