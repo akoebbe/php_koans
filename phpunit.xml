@@ -7,14 +7,9 @@
     printerClass="KoansLib\KoanPrinter"
     stopOnFailure="true"
 >
-
     <testsuites>
         <testsuite name="PHPKoans">
             <directory suffix="Koans.php">koans/</directory>
-            <file>koans/AssertKoans.php</file>
-            <file>koans/StringKoans.php</file>
-            <file>koans/StringManipulationKoans.php</file>
         </testsuite>
     </testsuites>
-
 </phpunit>

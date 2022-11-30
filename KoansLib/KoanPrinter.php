@@ -15,12 +15,12 @@ class KoanPrinter extends CliTestDoxPrinter
 {
     public function printResult(TestResult $result): void
     {
-        $this->printHeader();
+        $this->printHeader($result);
 
         $this->printFooter($result);
     }
 
-    protected function printHeader(): void
+    protected function printHeader($result): void
     {
         $this->write("\n\n");
     }
