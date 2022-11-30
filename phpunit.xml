@@ -3,9 +3,9 @@
     xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.1/phpunit.xsd"
     colors="true"
     processIsolation="false"
-    stopOnError="false"
+    stopOnError="true"
     printerClass="KoansLib\KoanPrinter"
-    stopOnFailure="false"
+    stopOnFailure="true"
 >
     <testsuites>
         <testsuite name="PHPKoans">
